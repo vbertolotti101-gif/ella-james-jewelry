@@ -5,18 +5,22 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>EJ Engraved | Personalized Jewelry</title>
+  <title>Ella James Engraved Jewelry</title>
 
   <style>
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f8f4ef;
-      color: #2d2926;
+      background: #f2ede7;
+      color: #302923;
     }
 
     h1, h2, h3 {
@@ -25,225 +29,243 @@
     }
 
     a {
-      color: inherit;
       text-decoration: none;
+      color: inherit;
     }
 
+    /* HEADER */
+
     header {
-      background: #fffdf9;
-      padding: 18px 28px;
-      border-bottom: 1px solid #e7ded5;
+      background: #302923;
+      color: #f8f3ed;
+      padding: 24px 30px;
+      text-align: center;
       position: sticky;
       top: 0;
       z-index: 10;
     }
 
-    .nav-wrap {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1fr auto 1fr;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .nav-left,
-    .nav-right {
-      display: flex;
-      gap: 24px;
-      font-size: 12px;
-      letter-spacing: 1.4px;
-    }
-
-    .nav-right {
-      justify-content: flex-end;
-    }
-
-    .brand-wrap {
-      text-align: center;
-    }
-
     .brand {
-      font-size: 34px;
-      letter-spacing: 6px;
       margin: 0;
+      font-size: 38px;
+      letter-spacing: 6px;
     }
 
     .brand-subtitle {
+      margin-top: 7px;
       font-size: 10px;
-      letter-spacing: 4px;
-      margin-top: 4px;
+      letter-spacing: 5px;
     }
+
+    nav {
+      margin-top: 22px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #f8f3ed;
+    }
+
+    /* HERO */
 
     .hero {
-      min-height: 610px;
+      min-height: 650px;
       background:
-        linear-gradient(rgba(255,250,245,.18), rgba(255,250,245,.18)),
+        linear-gradient(
+          rgba(47, 40, 34, 0.20),
+          rgba(47, 40, 34, 0.20)
+        ),
         url('ChatGPT Image Aug 2, 2026, 10_57_17 PM.png');
+
       background-size: cover;
       background-position: center;
+
       display: flex;
       align-items: center;
-      justify-content: flex-end;
-      padding: 40px;
+      padding: 50px;
     }
 
-    .hero-copy {
-      width: 48%;
-      max-width: 560px;
-      background: rgba(255,253,249,.82);
-      padding: 45px;
+    .hero-box {
+      max-width: 570px;
+      background: rgba(48, 41, 35, 0.88);
+      color: white;
+      padding: 55px;
     }
 
     .eyebrow {
       font-size: 10px;
       letter-spacing: 4px;
-      text-transform: uppercase;
-      margin-bottom: 16px;
+      margin-bottom: 18px;
     }
 
-    .hero h1 {
-      font-size: 62px;
-      line-height: 1.02;
-      margin: 0 0 18px;
+    .hero h2 {
+      font-size: 58px;
+      line-height: 1.05;
+      margin: 0 0 22px;
     }
 
     .hero p {
-      font-size: 17px;
       line-height: 1.8;
-      margin: 0 0 28px;
+      font-size: 17px;
+      margin-bottom: 30px;
     }
+
+    /* BUTTONS */
 
     .button {
       display: inline-block;
-      background: #2d2926;
-      color: white;
-      padding: 14px 24px;
+      background: #b89d83;
+      color: #ffffff;
+      padding: 15px 26px;
+      margin: 5px;
       font-size: 11px;
       letter-spacing: 2px;
-      margin: 4px;
     }
 
-    .button-outline {
+    .button-light {
       display: inline-block;
-      border: 1px solid #2d2926;
-      padding: 13px 24px;
+      border: 1px solid #e9ded3;
+      color: #ffffff;
+      padding: 14px 26px;
+      margin: 5px;
       font-size: 11px;
       letter-spacing: 2px;
-      margin: 4px;
-      background: rgba(255,255,255,.45);
     }
+
+    /* GENERAL SECTIONS */
 
     .section {
-      padding: 90px 20px;
+      padding: 95px 20px;
       text-align: center;
     }
 
     .section h2 {
-      font-size: 42px;
+      font-size: 43px;
       margin: 0 0 16px;
     }
 
     .section-intro {
       max-width: 680px;
-      margin: 0 auto;
+      margin: auto;
       line-height: 1.8;
       font-size: 16px;
     }
 
+    /* COLLECTION */
+
+    .collection {
+      background: #f7f3ee;
+    }
+
     .collection-grid {
       max-width: 1000px;
-      margin: 45px auto 0;
+      margin: 50px auto 0;
+
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
+      gap: 22px;
     }
 
     .collection-card {
-      background: #fffdf9;
-      border: 1px solid #e7ded5;
-      min-height: 220px;
+      min-height: 210px;
+      background: #d9ccc0;
+      border: 1px solid #cab9aa;
+
       display: flex;
-      align-items: center;
+      flex-direction: column;
       justify-content: center;
-      font-family: Georgia, serif;
-      font-size: 28px;
-      transition: transform .2s ease;
+      align-items: center;
+
+      transition: 0.2s ease;
     }
 
     .collection-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
+      background: #cdbbad;
     }
 
+    .collection-card h3 {
+      font-size: 29px;
+      margin: 0 0 8px;
+    }
+
+    .collection-card span {
+      font-size: 10px;
+      letter-spacing: 2px;
+    }
+
+    /* PROCESS */
+
     .process {
-      background: #efe7df;
+      background: #b7a493;
+      color: #2d2722;
     }
 
     .steps {
       max-width: 1050px;
-      margin: 50px auto 0;
+      margin: 55px auto 0;
+
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 35px;
     }
 
     .step {
-      padding: 25px;
+      background: rgba(248,243,237,0.50);
+      padding: 38px 28px;
     }
 
     .step-number {
       font-family: Georgia, serif;
-      font-size: 42px;
-      color: #9b8676;
-      margin-bottom: 14px;
+      font-size: 44px;
+      margin-bottom: 15px;
     }
 
     .step h3 {
       font-size: 24px;
-      margin: 0 0 12px;
+      margin: 0 0 14px;
     }
 
     .step p {
-      font-size: 15px;
       line-height: 1.75;
+      font-size: 14px;
     }
+
+    /* EVENTS */
 
     .events {
-      background: #fffdf9;
+      background: #39312b;
+      color: #f8f3ed;
     }
 
-    .event-box {
-      max-width: 900px;
+    .event-inner {
+      max-width: 760px;
       margin: auto;
-      border: 1px solid #e7ded5;
-      padding: 55px 35px;
-      background: #fbf7f2;
     }
 
-    .event-box h2 {
-      font-size: 42px;
-      margin-bottom: 16px;
+    .events h2 {
+      font-size: 47px;
     }
 
     .event-list {
       font-family: Georgia, serif;
       font-size: 18px;
-      line-height: 2;
-      margin: 26px 0;
+      line-height: 2.1;
+      margin: 30px 0;
+      color: #dfd2c6;
     }
 
+    /* STORY */
+
     .story {
-      background: #2d2926;
-      color: white;
+      background: #e3d8ce;
     }
 
     .story-inner {
-      max-width: 760px;
+      max-width: 720px;
       margin: auto;
-    }
-
-    .story h2 {
-      font-size: 42px;
     }
 
     .story p {
@@ -251,131 +273,138 @@
       font-size: 16px;
     }
 
+    /* CONTACT */
+
     .contact {
-      background: #e7dbcf;
+      background: #8d7969;
+      color: white;
     }
+
+    .contact .section-intro {
+      margin-bottom: 28px;
+    }
+
+    /* FOOTER */
 
     footer {
-      background: #fffdf9;
-      padding: 55px 20px;
-      border-top: 1px solid #e7ded5;
-    }
-
-    .footer-grid {
-      max-width: 1100px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: 1.5fr 1fr 1fr;
-      gap: 40px;
+      background: #2b2520;
+      color: #f7f1eb;
+      padding: 60px 20px;
+      text-align: center;
     }
 
     .footer-brand {
       font-family: Georgia, serif;
-      font-size: 24px;
+      font-size: 29px;
+      letter-spacing: 5px;
+    }
+
+    .footer-subtitle {
+      margin-top: 7px;
+      font-size: 10px;
       letter-spacing: 4px;
     }
 
-    .footer-title {
-      font-size: 11px;
-      letter-spacing: 2px;
-      margin-bottom: 12px;
+    .footer-links {
+      margin-top: 28px;
     }
 
     .footer-links a {
-      display: block;
-      margin: 8px 0;
-      font-size: 13px;
+      margin: 0 12px;
+      font-size: 11px;
+      letter-spacing: 1px;
     }
 
     .copyright {
-      text-align: center;
-      font-size: 11px;
-      margin-top: 35px;
-      color: #6f655e;
+      margin-top: 30px;
+      font-size: 10px;
+      color: #c8baae;
     }
 
-    @media (max-width: 850px) {
-      .nav-wrap {
-        grid-template-columns: 1fr;
-        text-align: center;
-      }
+    /* PHONE */
 
-      .nav-left,
-      .nav-right {
-        justify-content: center;
-        flex-wrap: wrap;
-      }
+    @media (max-width: 800px) {
 
       .hero {
-        justify-content: center;
         padding: 25px;
       }
 
-      .hero-copy {
-        width: 100%;
+      .hero-box {
+        padding: 35px 25px;
       }
 
-      .hero h1 {
-        font-size: 44px;
+      .hero h2 {
+        font-size: 42px;
       }
 
       .collection-grid,
-      .steps,
-      .footer-grid {
+      .steps {
         grid-template-columns: 1fr;
       }
+
+      nav a {
+        display: inline-block;
+        margin: 7px;
+      }
     }
+
   </style>
 </head>
 
+
 <body>
 
+
+<!-- HEADER -->
+
 <header>
-  <div class="nav-wrap">
 
-    <div class="nav-left">
-      <a href="#home">HOME</a>
-      <a href="#shop">SHOP</a>
-      <a href="#events">EVENTS</a>
-    </div>
+  <h1 class="brand">
+    ELLA JAMES
+  </h1>
 
-    <div class="brand-wrap">
-      <h1 class="brand">EJ ENGRAVED</h1>
-      <div class="brand-subtitle">PERSONALIZED JEWELRY</div>
-    </div>
-
-    <div class="nav-right">
-      <a href="#about">ABOUT</a>
-      <a href="#contact">CONTACT</a>
-    </div>
-
+  <div class="brand-subtitle">
+    ENGRAVED JEWELRY
   </div>
+
+  <nav>
+    <a href="#home">HOME</a>
+    <a href="#shop">SHOP</a>
+    <a href="#process">HOW IT WORKS</a>
+    <a href="#events">EVENTS</a>
+    <a href="#about">ABOUT</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
 </header>
 
 
+<!-- HERO -->
+
 <section class="hero" id="home">
 
-  <div class="hero-copy">
+  <div class="hero-box">
 
     <div class="eyebrow">
       PERSONALIZED • MEANINGFUL • YOURS
     </div>
 
-    <h1>
-      Jewelry, Made Personal.
-    </h1>
+    <h2>
+      Made Personal.<br>
+      Made to Last.
+    </h2>
 
     <p>
-      Personalized engraved jewelry created for the moments,
-      people and stories you never want to forget.
+      Personalized engraved jewelry created to celebrate
+      the people, places and moments you never want to forget.
     </p>
 
     <a class="button" href="#shop">
       SHOP JEWELRY
     </a>
 
-    <a class="button-outline" href="#events">
-      BOOK AN EVENT
+    <a class="button-light" href="#events">
+      BOOK THE CART
     </a>
 
   </div>
@@ -383,34 +412,62 @@
 </section>
 
 
-<section class="section" id="shop">
+<!-- COLLECTION -->
+
+<section class="section collection" id="shop">
 
   <div class="eyebrow">
-    THE COLLECTION
+    SHOP ELLA JAMES
   </div>
 
   <h2>
-    Made to Mean Something
+    Jewelry With Meaning
   </h2>
 
   <p class="section-intro">
-    Choose a piece you love and make it completely yours.
-    Every piece is designed to become something personal,
-    meaningful and worth keeping.
+    Start with a piece you love. Then make it completely yours
+    with engraving designed to tell your story.
   </p>
+
 
   <div class="collection-grid">
 
     <a class="collection-card" href="#contact">
-      Necklaces
+
+      <h3>
+        Necklaces
+      </h3>
+
+      <span>
+        SHOP NECKLACES
+      </span>
+
     </a>
 
-    <a class="collection-card" href="#contact">
-      Bracelets
-    </a>
 
     <a class="collection-card" href="#contact">
-      Rings
+
+      <h3>
+        Bracelets
+      </h3>
+
+      <span>
+        SHOP BRACELETS
+      </span>
+
+    </a>
+
+
+    <a class="collection-card" href="#contact">
+
+      <h3>
+        Rings
+      </h3>
+
+      <span>
+        SHOP RINGS
+      </span>
+
     </a>
 
   </div>
@@ -418,7 +475,9 @@
 </section>
 
 
-<section class="section process">
+<!-- 3 STEP PROCESS -->
+
+<section class="section process" id="process">
 
   <div class="eyebrow">
     MAKE IT YOURS
@@ -432,39 +491,60 @@
     Creating something meaningful should be simple.
   </p>
 
+
   <div class="steps">
 
     <div class="step">
-      <div class="step-number">01</div>
 
-      <h3>Choose Your Piece</h3>
+      <div class="step-number">
+        01
+      </div>
+
+      <h3>
+        Choose Your Piece
+      </h3>
 
       <p>
-        Select the jewelry you love from our collection of
-        necklaces, bracelets and rings.
+        Choose your favorite piece from our collection
+        of necklaces, bracelets and rings.
       </p>
+
     </div>
 
-    <div class="step">
-      <div class="step-number">02</div>
 
-      <h3>Personalize It</h3>
+    <div class="step">
+
+      <div class="step-number">
+        02
+      </div>
+
+      <h3>
+        Personalize It
+      </h3>
 
       <p>
-        Choose what you'd like engraved. Add initials,
-        a name, a date, a word or something meaningful to you.
+        Add initials, a name, special date, meaningful word
+        or another detail that's personal to you.
       </p>
+
     </div>
 
-    <div class="step">
-      <div class="step-number">03</div>
 
-      <h3>We Engrave It</h3>
+    <div class="step">
+
+      <div class="step-number">
+        03
+      </div>
+
+      <h3>
+        We Engrave It
+      </h3>
 
       <p>
-        We carefully engrave your piece to create something
-        uniquely yours and made to last.
+        We carefully engrave your jewelry to create a keepsake
+        made especially for you.
       </p>
+
     </div>
 
   </div>
@@ -472,12 +552,14 @@
 </section>
 
 
+<!-- EVENTS -->
+
 <section class="section events" id="events">
 
-  <div class="event-box">
+  <div class="event-inner">
 
     <div class="eyebrow">
-      THE EJ ENGRAVED CART
+      THE ELLA JAMES ENGRAVING CART
     </div>
 
     <h2>
@@ -485,10 +567,10 @@
     </h2>
 
     <p class="section-intro">
-      Our mobile engraving cart brings personalized jewelry
-      directly to your celebration. Guests choose a piece,
-      select their personalization and watch their keepsake
-      come to life.
+      Bring Ella James directly to your celebration.
+      Our mobile engraving cart creates a personalized experience
+      where guests can choose a piece, personalize it and watch
+      their keepsake come to life.
     </p>
 
     <div class="event-list">
@@ -497,13 +579,15 @@
     </div>
 
     <a class="button" href="#contact">
-      BOOK THE CART
+      INQUIRE ABOUT YOUR EVENT
     </a>
 
   </div>
 
 </section>
 
+
+<!-- ABOUT -->
 
 <section class="section story" id="about">
 
@@ -518,10 +602,15 @@
     </h2>
 
     <p>
-      Ella James was created around the idea that jewelry
-      should feel personal. Founded by two childhood best friends,
-      EJ Engraved is built around friendship, celebration and
-      creating meaningful keepsakes for life's special moments.
+      Ella James was created by two childhood best friends
+      with a shared love for meaningful jewelry and celebrating
+      life's special moments.
+    </p>
+
+    <p>
+      We believe jewelry should be more than something beautiful.
+      It should tell a story, hold a memory and feel completely
+      personal to the person wearing it.
     </p>
 
   </div>
@@ -529,69 +618,69 @@
 </section>
 
 
+<!-- CONTACT -->
+
 <section class="section contact" id="contact">
 
   <div class="eyebrow">
-    GET IN TOUCH
+    LET'S CREATE SOMETHING
   </div>
 
   <h2>
-    Let's Make Something Personal.
+    Make It Personal.
   </h2>
 
   <p class="section-intro">
-    Interested in a custom piece or bringing the EJ Engraved
-    cart to your event? We'd love to hear from you.
+    Have a question about custom jewelry or want Ella James
+    at your next event? We'd love to hear from you.
   </p>
 
   <a class="button" href="mailto:hello@ejengraved.com">
-    EMAIL US
+    EMAIL ELLA JAMES
   </a>
 
 </section>
 
 
+<!-- FOOTER -->
+
 <footer>
 
-  <div class="footer-grid">
+  <div class="footer-brand">
+    ELLA JAMES
+  </div>
 
-    <div>
-      <div class="footer-brand">EJ ENGRAVED</div>
+  <div class="footer-subtitle">
+    ENGRAVED JEWELRY
+  </div>
 
-      <p>
-        Personalized Jewelry<br>
-        Mobile Engraving • Special Events
-      </p>
-    </div>
+  <div class="footer-links">
 
-    <div>
-      <div class="footer-title">QUICK LINKS</div>
+    <a href="#shop">
+      SHOP
+    </a>
 
-      <div class="footer-links">
-        <a href="#shop">Shop</a>
-        <a href="#events">Events</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
+    <a href="#events">
+      EVENTS
+    </a>
 
-    <div>
-      <div class="footer-title">CONTACT</div>
+    <a href="#about">
+      ABOUT
+    </a>
 
-      <div class="footer-links">
-        <a href="mailto:hello@ejengraved.com">
-          hello@ejengraved.com
-        </a>
-      </div>
-    </div>
+    <a href="#contact">
+      CONTACT
+    </a>
 
   </div>
 
   <div class="copyright">
-    © 2026 EJ Engraved. All rights reserved.
+    © 2026 Ella James Engraved Jewelry. All rights reserved.
   </div>
 
 </footer>
 
+
 </body>
+
 </html>
