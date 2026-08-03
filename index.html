@@ -34,9 +34,6 @@
       padding: 24px 40px;
       border-bottom: 1px solid #e7ded5;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
     }
 
     .brand {
@@ -64,8 +61,8 @@
     .hero {
       min-height: 650px;
       background:
-        linear-gradient(rgba(238,230,221,.62), rgba(238,230,221,.62)),
-        url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1600&q=80');
+        linear-gradient(rgba(248,244,239,.25), rgba(248,244,239,.25)),
+        url('ChatGPT Image Aug 2, 2026, 10_57_17 PM.png');
       background-size: cover;
       background-position: center;
       display: flex;
@@ -77,6 +74,8 @@
 
     .hero-content {
       max-width: 760px;
+      background: rgba(255, 253, 249, 0.72);
+      padding: 45px 35px;
     }
 
     .eyebrow {
@@ -120,7 +119,7 @@
       border: 1px solid #2e2925;
       font-size: 11px;
       letter-spacing: 2px;
-      background: rgba(255,255,255,.3);
+      background: rgba(255,255,255,.55);
     }
 
     .section {
@@ -190,29 +189,14 @@
     }
 
     .event-section {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 600px;
       background: #fffdf9;
-    }
-
-    .event-image {
-      background:
-        linear-gradient(rgba(0,0,0,.1), rgba(0,0,0,.1)),
-        url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80');
-      background-size: cover;
-      background-position: center;
-    }
-
-    .event-copy {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 70px;
+      padding: 100px 20px;
+      text-align: center;
     }
 
     .event-inner {
-      max-width: 520px;
+      max-width: 760px;
+      margin: auto;
     }
 
     .event-inner h2 {
@@ -286,7 +270,6 @@
     }
 
     @media (max-width: 800px) {
-
       .hero h1 {
         font-size: 44px;
       }
@@ -294,18 +277,6 @@
       .categories,
       .steps {
         grid-template-columns: 1fr;
-      }
-
-      .event-section {
-        grid-template-columns: 1fr;
-      }
-
-      .event-image {
-        min-height: 420px;
-      }
-
-      .event-copy {
-        padding: 60px 25px;
       }
 
       nav a {
@@ -381,9 +352,7 @@
 
     <div class="step">
       <div class="step-number">01</div>
-
       <h3>Choose Your Piece</h3>
-
       <p>
         Select the jewelry you love from our collection of necklaces,
         bracelets, rings, charms and more.
@@ -392,9 +361,7 @@
 
     <div class="step">
       <div class="step-number">02</div>
-
       <h3>Personalize It</h3>
-
       <p>
         Choose what you'd like engraved. Add initials, a name, a meaningful
         date, special word, symbol or something completely personal to you.
@@ -403,9 +370,7 @@
 
     <div class="step">
       <div class="step-number">03</div>
-
       <h3>We Engrave It</h3>
-
       <p>
         We carefully engrave your piece to create something uniquely yours,
         made to wear, gift and keep for years to come.
@@ -416,40 +381,28 @@
 </section>
 
 <section class="event-section">
+  <div class="event-inner">
+    <div class="eyebrow">THE EJ ENGRAVED CART</div>
 
-  <div class="event-image"></div>
+    <h2>We Bring the Experience to You.</h2>
 
-  <div class="event-copy">
+    <p>
+      Bring personalized jewelry directly to your celebration with
+      the EJ Engraved mobile engraving cart. Guests can select a piece,
+      choose their personalization and watch their keepsake come to life.
+    </p>
 
-    <div class="event-inner">
-
-      <div class="eyebrow">THE EJ ENGRAVED CART</div>
-
-      <h2>We Bring the Experience to You.</h2>
-
-      <p>
-        Bring personalized jewelry directly to your celebration with
-        the EJ Engraved mobile engraving cart. Guests can select a piece,
-        choose their personalization and watch their keepsake come to life.
-      </p>
-
-      <div class="event-list">
-        Bridal Showers • Weddings • Bachelorette Parties<br>
-        Birthdays • Private Parties • Pop-Ups • Corporate Events
-      </div>
-
-      <a class="button" href="#">BOOK THE CART</a>
-
+    <div class="event-list">
+      Bridal Showers • Weddings • Bachelorette Parties<br>
+      Birthdays • Private Parties • Pop-Ups • Corporate Events
     </div>
 
+    <a class="button" href="#">BOOK THE CART</a>
   </div>
-
 </section>
 
 <section class="section story">
-
   <div class="story-content">
-
     <div class="eyebrow">OUR STORY</div>
 
     <h2>Meet Ella James</h2>
@@ -460,13 +413,10 @@
       best friends, EJ Engraved is built around friendship, celebration
       and creating keepsakes that feel completely personal.
     </p>
-
   </div>
-
 </section>
 
 <section class="section cta">
-
   <div class="eyebrow">CELEBRATE WITH US</div>
 
   <h2>Make Your Event Personal.</h2>
@@ -477,11 +427,9 @@
   </p>
 
   <a class="button" href="#">INQUIRE ABOUT YOUR DATE</a>
-
 </section>
 
 <footer>
-
   <div class="footer-brand">EJ ENGRAVED</div>
 
   <div class="footer-small">
@@ -491,7 +439,6 @@
   <div class="footer-small">
     © 2026 EJ Engraved
   </div>
-
 </footer>
 
 </body>
