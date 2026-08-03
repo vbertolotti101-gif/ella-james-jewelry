@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Ella James Events</title>
+  <title>Ella James Events | Mobile Engraving Cart</title>
 
   <style>
     * {
@@ -29,13 +29,14 @@
     }
 
     a {
-      text-decoration: none;
       color: inherit;
+      text-decoration: none;
     }
+
+    /* HEADER */
 
     header {
       background: #fffdf9;
-      color: #3a332e;
       padding: 24px 30px;
       text-align: center;
       border-bottom: 1px solid #dfd4ca;
@@ -65,56 +66,129 @@
       color: #4b423b;
     }
 
+    /* HERO */
+
     .hero {
-      background: #d9cbbf;
-      padding: 110px 20px;
-      text-align: center;
+      min-height: 720px;
+
+      background:
+        linear-gradient(
+          rgba(54, 46, 40, 0.05),
+          rgba(54, 46, 40, 0.05)
+        ),
+        url('ChatGPT Image Aug 2, 2026, 11_37_26 PM.png');
+
+      background-size: cover;
+      background-position: center;
+
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      padding: 55px;
+    }
+
+    .hero-card {
+      width: 46%;
+      max-width: 560px;
+      background: rgba(255, 253, 249, 0.93);
+      padding: 50px;
+      box-shadow: 0 10px 40px rgba(55, 45, 38, 0.14);
     }
 
     .eyebrow {
       font-size: 10px;
       letter-spacing: 4px;
-      color: #8b7869;
+      color: #987e6c;
       margin-bottom: 18px;
     }
 
     .hero h1 {
-      font-size: 58px;
+      font-size: 55px;
+      line-height: 1.08;
       margin: 0 0 20px;
     }
 
     .hero p {
-      max-width: 700px;
-      margin: auto;
-      font-size: 18px;
       line-height: 1.8;
+      font-size: 17px;
+      margin-bottom: 20px;
     }
 
     .button {
       display: inline-block;
       background: #7d6859;
       color: white;
-      padding: 15px 26px;
-      margin-top: 30px;
+      padding: 15px 27px;
       font-size: 11px;
       letter-spacing: 2px;
+      margin-top: 14px;
     }
 
+    .button:hover {
+      background: #685548;
+    }
+
+    /* GENERAL */
+
     .section {
-      padding: 90px 20px;
+      padding: 95px 20px;
       text-align: center;
     }
 
     .section h2 {
-      font-size: 42px;
-      margin-bottom: 18px;
+      font-size: 43px;
+      margin: 0 0 18px;
     }
 
     .section-intro {
-      max-width: 700px;
+      max-width: 720px;
       margin: auto;
-      line-height: 1.8;
+      line-height: 1.85;
       font-size: 16px;
+    }
+
+    /* EXPERIENCE */
+
+    .experience {
+      background: #eee5dd;
+    }
+
+    .steps {
+      max-width: 1050px;
+      margin: 55px auto 0;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    .step {
+      background: rgba(255,255,255,0.58);
+      padding: 42px 28px;
+      border: 1px solid rgba(255,255,255,0.7);
+    }
+
+    .number {
+      font-family: Georgia, serif;
+      font-size: 44px;
+      color: #9b806c;
+      margin-bottom: 14px;
+    }
+
+    .step h3 {
+      font-size: 24px;
+      margin: 0 0 14px;
+    }
+
+    .step p {
+      line-height: 1.75;
+      font-size: 14px;
+    }
+
+    /* EVENT TYPES */
+
+    .event-types {
+      background: #fffdf9;
     }
 
     .event-grid {
@@ -122,17 +196,17 @@
       margin: 50px auto 0;
       display: grid;
       grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
+      gap: 20px;
     }
 
     .event-card {
-      background: #fffdf9;
-      border: 1px solid #dfd4ca;
-      padding: 38px 25px;
+      padding: 35px 24px;
+      background: #f1e9e2;
+      border: 1px solid #ded2c8;
     }
 
     .event-card h3 {
-      font-size: 24px;
+      font-size: 23px;
       margin-top: 0;
     }
 
@@ -141,51 +215,56 @@
       font-size: 14px;
     }
 
-    .how {
-      background: #eee5dd;
+    /* GUEST EXPERIENCE */
+
+    .guest-section {
+      background: #d2c2b4;
     }
 
-    .steps {
-      max-width: 1000px;
-      margin: 50px auto 0;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 30px;
+    .guest-inner {
+      max-width: 800px;
+      margin: auto;
     }
 
-    .step {
-      padding: 25px;
+    .guest-section p {
+      max-width: 700px;
+      margin: 0 auto 30px;
+      line-height: 1.9;
+      font-size: 16px;
     }
 
-    .step-number {
+    .guest-flow {
       font-family: Georgia, serif;
-      font-size: 42px;
-      color: #9b806c;
+      font-size: 21px;
+      line-height: 2;
+      color: #655447;
     }
 
-    .step h3 {
-      font-size: 23px;
+    /* INQUIRY */
+
+    .inquiry {
+      background: #faf6f1;
     }
 
-    .step p {
-      line-height: 1.7;
-      font-size: 14px;
+    .inquiry-box {
+      max-width: 800px;
+      margin: auto;
+      border: 1px solid #ddd1c7;
+      padding: 55px 35px;
     }
 
-    .contact {
-      background: #c8b6a7;
-    }
+    /* FOOTER */
 
     footer {
       background: #4a4038;
       color: #f8f3ed;
       text-align: center;
-      padding: 50px 20px;
+      padding: 55px 20px;
     }
 
     .footer-brand {
       font-family: Georgia, serif;
-      font-size: 26px;
+      font-size: 27px;
       letter-spacing: 5px;
     }
 
@@ -196,14 +275,36 @@
       color: #d6c8bd;
     }
 
-    @media (max-width: 800px) {
-      .event-grid,
-      .steps {
-        grid-template-columns: 1fr;
+    .footer-links {
+      margin-top: 25px;
+    }
+
+    .footer-links a {
+      margin: 0 10px;
+      font-size: 11px;
+      letter-spacing: 1px;
+    }
+
+    @media (max-width: 850px) {
+
+      .hero {
+        min-height: 650px;
+        justify-content: center;
+        padding: 25px;
+      }
+
+      .hero-card {
+        width: 100%;
+        padding: 35px 25px;
       }
 
       .hero h1 {
         font-size: 42px;
+      }
+
+      .steps,
+      .event-grid {
+        grid-template-columns: 1fr;
       }
 
       nav a {
@@ -214,10 +315,15 @@
   </style>
 </head>
 
+
 <body>
 
+
 <header>
-  <h1 class="brand">ELLA JAMES</h1>
+
+  <h1 class="brand">
+    ELLA JAMES
+  </h1>
 
   <div class="brand-subtitle">
     ENGRAVED JEWELRY
@@ -230,42 +336,131 @@
     <a href="index.html#about">ABOUT</a>
     <a href="index.html#contact">CONTACT</a>
   </nav>
+
 </header>
+
 
 <section class="hero">
 
-  <div class="eyebrow">
-    THE ELLA JAMES ENGRAVING CART
+  <div class="hero-card">
+
+    <div class="eyebrow">
+      THE ELLA JAMES ENGRAVING CART
+    </div>
+
+    <h1>
+      Pick It.<br>
+      Personalize It.<br>
+      Watch It Come to Life.
+    </h1>
+
+    <p>
+      Ella James brings personalized jewelry directly
+      to your celebration with our mobile engraving experience.
+    </p>
+
+    <p>
+      Guests choose their jewelry, select their personalization,
+      and watch their piece get engraved right at the event.
+    </p>
+
+    <a class="button" href="mailto:hello@ejengraved.com">
+      REQUEST YOUR DATE
+    </a>
+
   </div>
-
-  <h1>
-    Bring Ella James to Your Event.
-  </h1>
-
-  <p>
-    Create a memorable experience for your guests with personalized jewelry
-    engraved right at your celebration.
-  </p>
-
-  <a class="button" href="mailto:hello@ejengraved.com">
-    REQUEST YOUR DATE
-  </a>
 
 </section>
 
-<section class="section">
+
+<section class="section experience">
 
   <div class="eyebrow">
-    PERFECT FOR
+    THE EXPERIENCE
   </div>
 
   <h2>
-    Celebrate With Something Personal
+    Personalized in Front of Your Guests
   </h2>
 
   <p class="section-intro">
-    Our mobile engraving cart is designed to bring a personalized jewelry
-    experience directly to your event.
+    Ella James isn't just a jewelry cart. It's an interactive
+    experience your guests get to be part of.
+  </p>
+
+  <div class="steps">
+
+    <div class="step">
+
+      <div class="number">
+        01
+      </div>
+
+      <h3>
+        Pick Your Piece
+      </h3>
+
+      <p>
+        Guests browse our curated selection of necklaces,
+        bracelets, and rings and choose the piece they love.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="number">
+        02
+      </div>
+
+      <h3>
+        Personalize It
+      </h3>
+
+      <p>
+        Choose initials, a name, a special date, meaningful word,
+        or another personalization option.
+      </p>
+
+    </div>
+
+
+    <div class="step">
+
+      <div class="number">
+        03
+      </div>
+
+      <h3>
+        Watch It Be Engraved
+      </h3>
+
+      <p>
+        Guests can watch their jewelry come to life as
+        their piece is engraved right at the Ella James cart.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section event-types">
+
+  <div class="eyebrow">
+    CELEBRATE WITH ELLA JAMES
+  </div>
+
+  <h2>
+    Made for Your Special Moments
+  </h2>
+
+  <p class="section-intro">
+    Our mobile engraving experience is perfect for
+    celebrations big and small.
   </p>
 
   <div class="event-grid">
@@ -273,48 +468,48 @@
     <div class="event-card">
       <h3>Bridal Showers</h3>
       <p>
-        Give guests a meaningful keepsake while adding a unique,
-        interactive touch to the celebration.
+        Give guests a personalized keepsake while adding
+        an interactive experience to the celebration.
       </p>
     </div>
 
     <div class="event-card">
       <h3>Weddings</h3>
       <p>
-        Create personalized jewelry for guests, bridal parties,
-        or as a special wedding favor experience.
+        Create personalized favors or custom pieces
+        for guests and bridal parties.
       </p>
     </div>
 
     <div class="event-card">
       <h3>Bachelorette Parties</h3>
       <p>
-        Make the weekend even more memorable with custom pieces
-        made especially for the group.
+        Celebrate the bride with matching or individually
+        personalized jewelry.
       </p>
     </div>
 
     <div class="event-card">
       <h3>Birthdays</h3>
       <p>
-        Celebrate with personalized jewelry guests can wear
-        long after the party ends.
+        Give guests something meaningful they can
+        wear long after the party ends.
       </p>
     </div>
 
     <div class="event-card">
       <h3>Private Parties</h3>
       <p>
-        From girls' nights to milestone celebrations,
-        we bring the engraving experience to you.
+        Bring Ella James to girls' nights,
+        milestone celebrations, and private gatherings.
       </p>
     </div>
 
     <div class="event-card">
       <h3>Corporate Events & Pop-Ups</h3>
       <p>
-        Add a custom jewelry experience to brand events,
-        employee celebrations, pop-ups, and special activations.
+        Add personalized jewelry to brand activations,
+        employee events, launches, and pop-ups.
       </p>
     </div>
 
@@ -322,69 +517,70 @@
 
 </section>
 
-<section class="section how">
 
-  <div class="eyebrow">
-    HOW IT WORKS
-  </div>
+<section class="section guest-section">
 
-  <h2>
-    Your Event in 3 Simple Steps
-  </h2>
+  <div class="guest-inner">
 
-  <div class="steps">
-
-    <div class="step">
-      <div class="step-number">01</div>
-      <h3>Tell Us About Your Event</h3>
-      <p>
-        Send us your date, location, event type,
-        and approximate guest count.
-      </p>
+    <div class="eyebrow">
+      FROM BLANK TO KEEPSAKE
     </div>
 
-    <div class="step">
-      <div class="step-number">02</div>
-      <h3>We Bring the Cart</h3>
-      <p>
-        Ella James arrives with our engraving setup
-        and a curated selection of jewelry.
-      </p>
-    </div>
+    <h2>
+      Your Guests Get to Watch the Magic Happen.
+    </h2>
 
-    <div class="step">
-      <div class="step-number">03</div>
-      <h3>Your Guests Make It Personal</h3>
-      <p>
-        Guests select their piece and personalization
-        and leave with a keepsake from your celebration.
-      </p>
+    <p>
+      Instead of receiving a finished favor,
+      your guests become part of the process.
+    </p>
+
+    <div class="guest-flow">
+      Choose Your Jewelry
+      <br>
+      ↓
+      <br>
+      Choose Your Personalization
+      <br>
+      ↓
+      <br>
+      Watch It Be Engraved
+      <br>
+      ↓
+      <br>
+      Take Home Your Keepsake
     </div>
 
   </div>
 
 </section>
 
-<section class="section contact">
 
-  <div class="eyebrow">
-    READY TO CELEBRATE?
+<section class="section inquiry">
+
+  <div class="inquiry-box">
+
+    <div class="eyebrow">
+      BOOK THE CART
+    </div>
+
+    <h2>
+      Bring Ella James to Your Event.
+    </h2>
+
+    <p class="section-intro">
+      Tell us your event date, location, event type,
+      and estimated guest count to get started.
+    </p>
+
+    <a class="button" href="mailto:hello@ejengraved.com">
+      INQUIRE ABOUT YOUR DATE
+    </a>
+
   </div>
 
-  <h2>
-    Let's Bring Ella James to Your Event.
-  </h2>
-
-  <p class="section-intro">
-    Tell us a little about your celebration and we'll help create
-    an engraving experience designed for your event.
-  </p>
-
-  <a class="button" href="mailto:hello@ejengraved.com">
-    INQUIRE ABOUT YOUR DATE
-  </a>
-
 </section>
+
 
 <footer>
 
@@ -396,7 +592,16 @@
     ENGRAVED JEWELRY
   </div>
 
+  <div class="footer-links">
+    <a href="index.html">HOME</a>
+    <a href="index.html#shop">SHOP</a>
+    <a href="events.html">EVENTS</a>
+    <a href="index.html#contact">CONTACT</a>
+  </div>
+
 </footer>
 
+
 </body>
+
 </html>
